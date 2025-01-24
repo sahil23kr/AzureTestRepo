@@ -2,7 +2,7 @@ package com.Testapp.Testapp.Entity;
 
 import jakarta.persistence.*;
 
-@Table(name = "Employee")
+@Table(name = "Employe")
 @Entity
 public class Employee {
 
@@ -12,7 +12,7 @@ public class Employee {
     private String name;
     private String emailid;
     private Long phoneno;
-    private String desc;
+    private String descr;
 
     public Long getId() {
         return id;
@@ -46,12 +46,12 @@ public class Employee {
         this.phoneno = phoneno;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescr() {
+        return descr;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescr(String descr) {
+        this.descr = descr;
     }
 
     @Override
@@ -61,7 +61,7 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", emailid='" + emailid + '\'' +
                 ", phoneno=" + phoneno +
-                ", desc='" + desc + '\'' +
+                ", descr='" + descr + '\'' +
                 '}';
     }
 }
